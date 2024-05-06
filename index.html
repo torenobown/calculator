@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="calculator">
+            <input type="text" class="display" id="display" readonly>
+            <div class="memory__buttons">
+            <button id="clearButton">MC</button>
+            <button id="recallButton" onclick="setOperator('memory')">MR</button>
+            <button id="efwfew()">M+</button>
+            <button id="efwfew()">M-</button>
+            <button id="saveButton">MS</button>
+            <button id="efwfew()">M*</button>
+        </div>
+            <div class="buttons">
+                <button onclick="calculatePercentage()">%</button>
+                <button onclick="appendNumber()">√</button>
+                <button onclick="appendNumber()">x^2</button>
+                <button onclick="appendNumber()">1/x</button>
+                <button onclick="appendNumber()">CE</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="deleteLastDigit()">
+                    <img
+                      width="18px"
+                      src="./delete-svgrepo-com.svg"
+                      alt="del"
+                    />
+                </button>                
+                <button onclick="setOperator('/')">/</button>
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button onclick="setOperator('*')">*</button>
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button onclick="setOperator('-')">-</button>
+                <button onclick="appendNumber('1')">1</button>
+
+                <button onclick="appendNumber('2')">2</button>
+
+                <button onclick="appendNumber('3')">3</button>
+
+                <button onclick="setOperator('+')">+</button>
+
+                <button onclick="changeSign()">+-</button>
+
+                <button onclick="appendNumber('+')">0</button>
+
+                <button onclick="appendNumber('.')">.</button>
+                <button onclick="calculateResult()">=</button>
+
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+   <script src="./script.js"></script> 
+</body>
+</html>
