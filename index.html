@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <body>
-        <div class="calculator">
-            <input type="text" class="display" id="display" readonly>
-            <div class="memory__buttons">
-            <button id="clearButton">MC</button>
-            <button id="recallButton" onclick="setOperator('memory')">MR</button>
-            <button id="efwfew()">M+</button>
-            <button id="efwfew()">M-</button>
-            <button id="saveButton">MS</button>
-            <button id="efwfew()">M*</button>
+      <div class="calculator">
+        <input type="text" class="display" id="display" readonly />
+        <div class="memory__buttons">
+          <button id="clearButton">MC</button>
+          <button id="recallButton" onclick="setOperator('memory')">MR</button>
+          <button id="efwfew()">M+</button>
+          <button id="efwfew()">M-</button>
+          <button id="saveButton">MS</button>
+          <button id="efwfew()">M*</button>
         </div>
-            <div class="buttons">
-                <button onclick="calculatePercentage()">%</button>
-                <button onclick="appendNumber()">√</button>
-                <button onclick="appendNumber()">x^2</button>
-                <button onclick="appendNumber()">1/x</button>
-                <button onclick="appendNumber()">CE</button>
-                <button onclick="clearDisplay()">C</button>
-                <button onclick="deleteLastDigit()">
-                    <img
-                      width="18px"
-                      src="./delete-svgrepo-com.svg"
-                      alt="del"
-                    />
-                </button>                
-                <button onclick="setOperator('/')">/</button>
-                <button onclick="appendNumber('7')">7</button>
-                <button onclick="appendNumber('8')">8</button>
-                <button onclick="appendNumber('9')">9</button>
-                <button onclick="setOperator('*')">*</button>
-                <button onclick="appendNumber('4')">4</button>
-                <button onclick="appendNumber('5')">5</button>
-                <button onclick="appendNumber('6')">6</button>
-                <button onclick="setOperator('-')">-</button>
-                <button onclick="appendNumber('1')">1</button>
+        <div class="buttons">
+          <button onclick="percentButton()">%</button>
+          <button onclick="sqrtButton()">√</button>
+          <button onclick="sqrButton()">x^2</button>
+          <button onclick="divideByOnec()">1/x</button>
+          <button onclick="clearAllButton()">CE</button>
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="deleteLastDigit()">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 800 540"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M782.605 0.304321H266.869C262.172 0.304321 257.823 2.21714 254.52 5.52257L5.08778 257.736C-1.69593 264.52 -1.69593 275.478 5.08778 282.262L254.694 534.477C257.999 537.783 262.347 539.696 267.043 539.696H782.605C792.173 539.696 800 531.868 800 522.301V17.6974C800 8.13168 792.173 0.304321 782.605 0.304321ZM765.211 504.733H274.002L41.7899 269.913L274.176 35.092H765.212V504.733H765.211Z"
+                fill="white"
+              />
+              <path
+                d="M405.152 169.026L505.864 269.738L405.152 370.45C398.368 377.408 398.543 388.367 404.978 395.151C411.761 401.934 422.72 401.934 429.503 395.151L530.215 294.438L630.927 395.151C637.886 401.76 648.844 401.587 655.453 394.803C661.89 388.019 661.89 377.408 655.453 370.625L554.916 269.913L655.628 169.201C662.237 162.243 662.064 151.284 655.28 144.675C648.497 138.239 637.886 138.239 631.102 144.675L530.39 245.213L429.678 144.501C423.069 137.542 411.936 137.369 405.152 144.153C398.368 150.937 398.021 161.895 404.805 168.679C404.979 168.853 405.152 169.026 405.152 169.026Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button onclick="setOperator('/')">/</button>
+          <button onclick="appendNumber('7')">7</button>
+          <button onclick="appendNumber('8')">8</button>
+          <button onclick="appendNumber('9')">9</button>
+          <button onclick="setOperator('*')">*</button>
+          <button onclick="appendNumber('4')">4</button>
+          <button onclick="appendNumber('5')">5</button>
+          <button onclick="appendNumber('6')">6</button>
+          <button onclick="setOperator('-')">-</button>
+          <button onclick="appendNumber('1')">1</button>
 
-                <button onclick="appendNumber('2')">2</button>
+          <button onclick="appendNumber('2')">2</button>
 
-                <button onclick="appendNumber('3')">3</button>
+          <button onclick="appendNumber('3')">3</button>
 
-                <button onclick="setOperator('+')">+</button>
+          <button onclick="setOperator('+')">+</button>
 
-                <button onclick="changeSign()">+-</button>
+          <button onclick="changeSign()">+-</button>
 
-                <button onclick="appendNumber('+')">0</button>
+          <button onclick="appendNumber('0')">0</button>
 
-                <button onclick="appendNumber('.')">.</button>
-                <button onclick="calculateResult()">=</button>
-
-
-            </div>
+          <button onclick="appendNumber('.')">.</button>
+          <button onclick="calculateResult()">=</button>
         </div>
-        <script src="script.js"></script>
+      </div>
+      <script src="script.js"></script>
     </body>
-   <script src="./script.js"></script> 
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
